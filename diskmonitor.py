@@ -36,7 +36,7 @@ def checkSpaceUtilization(filesystem):
             device = output.split("\n")[1]
             size, used, available, percent, mountpoint = output.split("\n")[2].split()
         else:
-            device, size, used, available, percent, mountpoint = output.split("\n")[2].split()
+            device, size, used, available, percent, mountpoint = output.split("\n")[1].split()
         return [device,size,used,available,percent, mountpoint]
 
 def main():
