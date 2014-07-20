@@ -1,6 +1,7 @@
 #!/usr/bin/env python2.6
 
 import sys
+import cmd
 
 class cmd_test(cmd.Cmd):
     '''Cmd example'''

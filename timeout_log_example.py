@@ -50,7 +50,7 @@ if __name__ == "__main__":
         #Do something here,
         #if task takes longer than TIMEOUT, an exception is generated
         #e.g: try a simple time.sleep(timeout+1)
-        time.sleep(timeout+1)
+        time.sleep(TIMEOUT + 1)
     except Exception, why:
         notify("Failed! :%s" %why,"ERROR")
         sys.exit(-1)
